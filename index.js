@@ -26,7 +26,6 @@ function shallowEqualImmutable(objA, objB) {
 
   if (typeof objA !== 'object' || objA === null ||
       typeof objB !== 'object' || objB === null) {
-        console.log(8889994);
     return false;
   }
 
@@ -34,7 +33,6 @@ function shallowEqualImmutable(objA, objB) {
   const keysB = Object.keys(objB);
 
   if (keysA.length !== keysB.length) {
-        console.log(8889994);
     return false;
 
   }
