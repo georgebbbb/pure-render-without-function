@@ -1,10 +1,5 @@
+var is =require("immutable").is
 
-/**
- * @author ChuanbaoYang <jarvanycb@gmail.com>
- * @license MIT
- */
-'use strict';
-const is from "immutable"
 
 function shouldComponentUpdate(nextProps, nextState) {
   return !shallowEqualImmutable(this.props, nextProps) || !shallowEqualImmutable(this.state, nextState);
@@ -29,8 +24,8 @@ function shallowEqualImmutable(objA, objB) {
     return false;
   }
 
-  const keysA = Object.keys(objA);
-  const keysB = Object.keys(objB);
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
 
   if (keysA.length !== keysB.length) {
     return false;
@@ -38,8 +33,8 @@ function shallowEqualImmutable(objA, objB) {
   }
 
   // Test for A's keys different from B.
-  const bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
-  for (let i = 0; i < keysA.length; i++) {
+  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+  for (var i = 0; i < keysA.length; i++) {
     if(!bHasOwnProperty(keysA[i]) ){
       return false
     }else {
@@ -56,6 +51,4 @@ function shallowEqualImmutable(objA, objB) {
 }
 
 
-
-
-module.exports = pureRenderDecorator;
+module.exports = pureRenderDecorator

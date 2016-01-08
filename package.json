@@ -1,6 +1,6 @@
 {
   "name": "pure-render-without-function",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "pure-render-decorator for immutable",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "url": "https://github.com/georgebbbb/pure-render-without-function/issues"
   },
   "homepage": "https://github.com/georgebbbb/pure-render-without-function#readme",
-  "dependencies": {
-    "immutable": "^3.7.6"
+  "peerDependencies": {
+    "immutable": ">=2.0.10"
   }
 }
